@@ -65,7 +65,7 @@ export default resource => (
             Object.defineProperty(
                 newState,
                 'fetchedAt',
-                previousState.fetchedAt
+                { value: previousState.fetchedAt }
             );
 
             return newState;
